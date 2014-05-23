@@ -126,14 +126,14 @@ The delete query looks like the following:
 
 With no time constraints this query will delete every point in the
 time series `response_times`. You have to be a db admin in order to be
-able to delete data from timeseries.
+able to delete data from timeseries. Delete time conditions only support ranges, an equals condition (=) is currently not supported.
 
 Any conditions in the where clause that don't set the start and/or end
 time will be ignored, for example the following query:
 
 `delete from response_times where user = 'foo'`
 
-will return an error. Delete time conditions only support ranges, an equals condition (=) is currently not supported.
+will return an error.
 
 ## The Where Clause
 
