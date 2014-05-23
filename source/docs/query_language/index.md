@@ -91,7 +91,7 @@ will return all points that were writtern after `2014-01-01 00:00:00`
 Points are uniquely identified by the time series they appear in, the time, and the sequence number. Here's a query that returns a specific point.
 
 ```sql
-select * from events where time = 1383154176u and sequence_number = 2321;
+select * from events where time = 1383154176s and sequence_number = 2321;
 ```
 
 This was implemented in v0.4.0.
