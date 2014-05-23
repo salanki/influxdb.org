@@ -133,7 +133,7 @@ time will be ignored, for example the following query:
 
 `delete from response_times where user = 'foo'`
 
-will return an error.
+will return an error. Delete time conditions only support ranges, an equals condition (=) is currently not supported.
 
 ## The Where Clause
 
